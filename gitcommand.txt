@@ -1,0 +1,31 @@
+Note: Short status flags are:
+
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+/* basic git command */
+git --version         				// check the version of git
+git init	      				// initialize project in git
+git status	      				// check the status
+git status --short    				// check the status
+git add index.html    				// add single file to staging env
+git add --all         				// add all file to staging env
+git commit -m "Msgg"  				// Commit all file with a message
+git commit -a -m "Updated"			// commited directly without staging (not recommended)
+git branch					// to show all branch
+git branch second-branch			// for creating new branch name second-branch
+git checkout second-branch 			// switching to branch
+git checkout -b third-branch			// shorthand of creating and switching to new branch
+git merge third-branch 				// merge is for merging branch of ur currently active branch
+git branch -d third-branch			// -d is for deleting a branch
+git log						// too see all commits
+git revert <hash_name>				// revert the old commit and create the new one
+git config user.name "uname" , git config user.email "email"	// add a configuration add -g before user then it will config globally
+git config --local --list			// to see config local repo config list replace --local to --global to see global config list
+
+
+/* GitHub */
+git remote add origin https://github.com/w3schools-test/hello-world.git  // for connecting to remote repo
+
